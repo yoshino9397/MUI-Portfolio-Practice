@@ -1,76 +1,77 @@
 import React from "react";
 import Particles from "react-tsparticles";
 
-const particle = () => (
+const Particle = () => (
   <Particles
     options={{
-      fullScreen: {
+      fpsLimit: 60,
+      backgroundMode: {
         enable: true,
-        zIndex: -1,
+      },
+      background: {
+        color: "#000",
       },
       particles: {
-        number: {
-          value: 200,
-          limit: 300,
-          density: {
-            enable: true,
-            value_area: 800,
+        // canvas borders bounce factors
+        bounce: {
+          horizontal: {
+            value: 1.01,
+          },
+          vertical: {
+            value: 1.01,
           },
         },
         color: {
           value: "#ffffff",
         },
-        opacity: {
-          value: 0.5,
-          random: true,
-          anim: {
-            enable: true,
-            speed: 1,
-            opacity_min: 0.5,
-            sync: false,
-          },
-        },
-        line_linked: {
-          enable: true,
-          distance: 100,
+        links: {
           color: "#ffffff",
-          opacity: 1,
+          distance: 150,
+          enable: true,
+          opacity: 0.5,
           width: 1,
         },
-        move: {
+        collisions: {
           enable: true,
-          speed: 3,
-          direction: "none",
-          random: false,
-          straight: false,
-          out_mode: "out",
-          bounce: false,
-          attract: {
-            enable: false,
-            rotateX: 600,
-            rotateY: 1200,
-          },
-        },
-      },
-      backgroundMask: {
-        enable: true,
-        cover: {
-          color: {
-            value: {
-              r: 0,
-              g: 0,
-              b: 0,
+          // collisions bounce factors
+          bounce: {
+            horizontal: {
+              value: 1.5,
+            },
+            vertical: {
+              value: 1.5,
             },
           },
         },
+        move: {
+          direction: "none",
+          enable: true,
+          outMode: "bounce",
+          random: false,
+          speed: 5,
+          straight: false,
+        },
+        number: {
+          density: {
+            enable: true,
+            area: 800,
+          },
+          value: 80,
+        },
+        opacity: {
+          value: 0.5,
+        },
+        shape: {
+          type: "circle",
+        },
+        size: {
+          random: true,
+          value: 5,
+        },
       },
-      retina_detect: true,
-      fps_limit: 60,
-      background: {
-        image: "url('https://particles.js.org/images/background3.jpg')",
-      },
+      detectRetina: true,
     }}
   />
 );
 
-export default particle;
+export default Particle;
