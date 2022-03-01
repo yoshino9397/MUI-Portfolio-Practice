@@ -4,10 +4,13 @@ import Particle from "./Particle";
 
 const Home = () => {
   return (
-    <div>
-      {/* <Header /> */}
-      <Particle />
-    </div>
+    <>
+     
+      <div>
+        <Particle />
+         {/* <Header /> */}
+      </div>
+    </>
   );
 };
 
