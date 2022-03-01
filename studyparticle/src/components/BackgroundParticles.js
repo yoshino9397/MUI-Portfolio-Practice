@@ -1,8 +1,7 @@
 import React from "react";
 import Particles from "react-tsparticles";
-import "./App.css";
 
-const Particle = () => (
+const BackgroundParticles = () => (
   <Particles
     options={{
       fullScreen: {
@@ -74,4 +73,4 @@ const Particle = () => (
   />
 );
 
-export default Particle;
+export default BackgroundParticles;

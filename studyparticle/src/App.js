@@ -1,9 +1,9 @@
-import './App.css';
-
+import "./App.css";
+import BackgroundParticles from "./components/BackgroundParticles";
 function App() {
   return (
     <div className="App">
-    <h1>hello</h1>
+      <BackgroundParticles />;
     </div>
   );
 }
