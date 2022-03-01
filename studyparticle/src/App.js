@@ -1,10 +1,15 @@
 import "./App.css";
 import BackgroundParticles from "./components/BackgroundParticles";
+import Header from "./components/Header";
 function App() {
   return (
-    <div className="App">
-      <BackgroundParticles />;
-    </div>
+    <>
+      <Header />
+    </>
+
+    // <div className="App">
+    //   <BackgroundParticles />;
+    // </div>
   );
 }
 
