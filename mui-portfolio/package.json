@@ -16,6 +16,7 @@
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
     "react-tsparticles": "^1.41.5",
+    "react-typing-effect": "^2.0.5",
     "typed.js": "^2.0.12",
     "web-vitals": "^2.1.4"
   },
