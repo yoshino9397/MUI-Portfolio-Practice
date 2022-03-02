@@ -5,13 +5,12 @@ import React from "react";
 const Typing = () => {
   return (
     <>
-      <ReactTypingEffect text={["Hello.", "World!"]} />
-
-      <br />
-
       <ReactTypingEffect
-        text={["Hello.", "World!!!"]}
-        cursorRenderer={(cursor) => <h1>{cursor}</h1>}
+        text={["Yoshino Yayama"]}
+        speed={200}
+        cursorRenderer={(cursor) => (
+          <h1 style={{ color: "white" }}>{cursor}</h1>
+        )}
         displayTextRenderer={(text, i) => {
           return (
             <h1>
@@ -20,7 +19,8 @@ const Typing = () => {
                 return (
                   <span
                     key={key}
-                    style={i % 2 === 0 ? { color: "magenta" } : {}}
+                    // style={i % 2 === 0 ? { color: "magenta" } : {}}
+                    style={{ color: "white" }}
                   >
                     {char}
                   </span>
