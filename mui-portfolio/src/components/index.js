@@ -7,8 +7,8 @@ const Home = () => {
     <>
       <div>
         <Particle />
+        <Header />
       </div>
-      <Header />
     </>
   );
 };

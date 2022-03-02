@@ -2,7 +2,7 @@ import React from "react";
 import Particles from "react-tsparticles";
 import { makeStyles } from "@material-ui/styles";
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   particlesCanvas: {
     position: "fixed",
   },
