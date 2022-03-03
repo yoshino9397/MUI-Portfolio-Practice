@@ -20,7 +20,6 @@ import ContactMailIcon from "@mui/icons-material/ContactMail";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { orange } from "@mui/material/colors";
 import { red } from "@mui/material/colors";
-import { blue } from "@mui/material/colors";
 
 import avatar from "../images/avatar.jpg";
 import Footer from "../components/Footer";
