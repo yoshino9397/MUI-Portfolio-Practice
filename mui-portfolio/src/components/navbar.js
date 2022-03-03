@@ -52,7 +52,7 @@ const Navbar = () => {
         component="div"
         sx={{
           width: 250,
-          background: "#511",
+          background: "#e53935",
           height: "100%",
         }}
       >
@@ -67,7 +67,11 @@ const Navbar = () => {
           }}
         />
         <Divider />
-        <List>
+        <List
+          sx={{
+            marginTop: "2rem",
+          }}
+        >
           {menuItems.map((item, i) => (
             <ListItem
               button
@@ -75,9 +79,18 @@ const Navbar = () => {
               onClick={() => setOpen(false)}
               component={Link}
               to={item.listPath}
-              color="primary"
+              sx={{
+                color: "#ffe0b2",
+                margin: "0 2rem",
+              }}
             >
-              <ListItemIcon color="primary">{item.listIcon}</ListItemIcon>
+              <ListItemIcon
+                sx={{
+                  color: "#ffe0b2",
+                }}
+              >
+                {item.listIcon}
+              </ListItemIcon>
               <ListItemText primary={item.listText} />
             </ListItem>
           ))}
@@ -107,7 +120,7 @@ const Navbar = () => {
             </Toolbar>
           </AppBar>
         </Box>
-        <Drawer open={open} anchor="left" onClose={() => setOpen(false)} >
+        <Drawer open={open} anchor="right" onClose={() => setOpen(false)}>
           {sideList()}
           <Footer />
         </Drawer>
