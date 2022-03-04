@@ -18,7 +18,6 @@ import AssignmentIndIcon from "@mui/icons-material/AssignmentInd";
 import AppsIcon from "@mui/icons-material/Apps";
 import ContactMailIcon from "@mui/icons-material/ContactMail";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { orange } from "@mui/material/colors";
 import { red } from "@mui/material/colors";
 
 import avatar from "../images/avatar.jpg";
@@ -34,7 +33,7 @@ const menuItems = [
 const theme = createTheme({
   palette: {
     primary: {
-      main: orange[300],
+      main: "#f4ba69",
     },
     secondary: {
       main: red[800],
