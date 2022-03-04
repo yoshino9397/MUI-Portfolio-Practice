@@ -60,7 +60,7 @@ const Contact = () => {
             className={classes.heading}
             sx={{ mb: "1rem" }}
           >
-            Hire or Contact me...
+            Contact Me
           </Typography>
 
           <CssTextField
@@ -97,7 +97,7 @@ const Contact = () => {
               },
             }}
           >
-            Contact Me
+            Send
           </Button>
         </Box>
       </Grid>
