@@ -12,7 +12,7 @@ function App() {
   return (
     <React.Fragment>
       <CssBaseline />
-      {/* <Navbar /> */}
+      <Navbar />
       <Portfolio />
       {/*
       <Routes>
