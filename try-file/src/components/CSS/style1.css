@@ -54,8 +54,9 @@ p {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08),
-    0 3px 0 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 0 4px tomato, 0 3px 0 4px rgba(0, 0, 0, 0.05);
+  background-color: tan;
+  color: #8a1c1c;
 }
 .vertical-timeline--one-column-right .vertical-timeline-element-icon {
   right: 0;
@@ -230,7 +231,7 @@ p {
   height: 0;
   width: 0;
   border: 7px solid transparent;
-  border-left: 7px solid white;
+  border-left: 7px solid rgb(255, 255, 255);
 }
 
 .vertical-timeline--one-column-right
