@@ -11,7 +11,14 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import WorkIcon from "@mui/icons-material/Work";
 import SchoolIcon from "@mui/icons-material/School";
-import SmartToyIcon from "@mui/icons-material/SmartToy";
+import BabyChangingStationIcon from "@mui/icons-material/BabyChangingStation";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
+
+const theme = createTheme({
+  typography: {
+    fontFamily: ["Rajdhani", "sans-serif"].join(","),
+  },
+});
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
@@ -28,19 +35,20 @@ const Resume = () => {
   const classes = useStyles();
   return (
     <Box component="header" className={classes.mainContainer}>
-      <Typography
-        variant="h4"
-        align="center"
-        className={classes.heading}
-        sx={{ mt: "4rem" }}
-      >
-        Working Experience
-      </Typography>
+      <ThemeProvider theme={theme}>
+        <Typography
+          variant="h4"
+          align="center"
+          className={classes.heading}
+          sx={{ mt: "4rem", fontSize: "3.5rem" }}
+        >
+          Working Experience
+        </Typography>
+      </ThemeProvider>
       <VerticalTimeline>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           date="2011 - present"
-          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           icon={<WorkIcon />}
         >
           <h1 className="vertical-timeline-element-title">Creative Director</h1>
@@ -53,7 +61,6 @@ const Resume = () => {
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           date="2010 - 2011"
-          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           icon={<WorkIcon />}
         >
           <h1 className="vertical-timeline-element-title">Art Director</h1>
@@ -68,7 +75,6 @@ const Resume = () => {
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           date="2008 - 2010"
-          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           icon={<WorkIcon />}
         >
           <h1 className="vertical-timeline-element-title">Web Designer</h1>
@@ -80,7 +86,6 @@ const Resume = () => {
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           date="2006 - 2008"
-          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           icon={<WorkIcon />}
         >
           <h1 className="vertical-timeline-element-title">Web Designer</h1>
@@ -92,7 +97,7 @@ const Resume = () => {
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
           date="April 2013"
-          iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
+          iconStyle={{ background: "#8a1c1c", color: "tan" }}
           icon={<SchoolIcon />}
         >
           <h1 className="vertical-timeline-element-title">
@@ -104,7 +109,7 @@ const Resume = () => {
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
           date="November 2012"
-          iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
+          iconStyle={{ background: "#8a1c1c", color: "tan" }}
           icon={<SchoolIcon />}
         >
           <h1 className="vertical-timeline-element-title">
@@ -114,22 +119,12 @@ const Resume = () => {
           <p>Creative Direction, User Experience, Visual Design</p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
-          className="vertical-timeline-element--education"
-          date="2002 - 2006"
-          iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-          icon={<SchoolIcon />}
-        >
-          <h1 className="vertical-timeline-element-title">
-            Bachelor of Science in Interactive Digital Media Visual Imaging
-          </h1>
-          <h4 className="vertical-timeline-element-subtitle">
-            Bachelor Degree
-          </h4>
-          <p>Creative Direction, Visual Design</p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          iconStyle={{ background: "rgb(16, 204, 82)", color: "#fff" }}
-          icon={<SmartToyIcon />}
+          iconStyle={{
+            background: "tomato",
+            color: "#8a1c1c",
+            boxShadow: "0 0 0 4px tan",
+          }}
+          icon={<BabyChangingStationIcon />}
         />
       </VerticalTimeline>
     </Box>
