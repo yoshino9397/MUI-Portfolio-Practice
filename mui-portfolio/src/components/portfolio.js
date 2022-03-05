@@ -73,6 +73,7 @@ const useStyles = makeStyles({
     background: "#233",
     height: "100%",
   },
+  
 });
 
 const Portfolio = () => {
@@ -117,6 +118,7 @@ const Portfolio = () => {
                   sx={{
                     color: "#8a1c1c",
                     fontWeight: "bold",
+                    transition: ".2s",
                     ":hover": {
                       fontSize: "11px",
                     },
@@ -129,6 +131,7 @@ const Portfolio = () => {
                   sx={{
                     color: "#8a1c1c",
                     fontWeight: "bold",
+                    transition: ".2s",
                     ":hover": {
                       fontSize: "11px",
                     },

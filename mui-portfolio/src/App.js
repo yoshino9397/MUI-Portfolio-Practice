@@ -13,7 +13,7 @@ function App() {
     <React.Fragment>
       <CssBaseline />
       <Navbar />
-      <Portfolio />
+      <Resume />
       {/*
       <Routes>
         <Route path="/" component={Home} />
