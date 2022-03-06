@@ -3,8 +3,7 @@ import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
-import "../components/CSS/style1.css";
-import "../components/CSS/style2.css";
+import "../components/CSS/style.css";
 
 import { makeStyles } from "@material-ui/styles";
 import Box from "@mui/material/Box";
