@@ -13,14 +13,12 @@ function App() {
     <React.Fragment>
       <CssBaseline />
       <Navbar />
-      <Resume />
-      {/*
       <Routes>
-        <Route path="/" component={Home} />
-        <Route path="/resume" component={Resume} />
-        <Route path="/portfolio" component={Portfolio} />
-        <Route path="/contact" component={Contact} />
-      </Routes> */}
+        <Route path="/" element={<Home />} />
+        <Route path="/resume" element={<Resume />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
     </React.Fragment>
   );
 }

@@ -6,12 +6,13 @@ import {
 import "../CSS/Resume.css";
 
 import { makeStyles } from "@material-ui/styles";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import WorkIcon from "@mui/icons-material/Work";
 import SchoolIcon from "@mui/icons-material/School";
 import BabyChangingStationIcon from "@mui/icons-material/BabyChangingStation";
-import { ThemeProvider, createTheme } from "@mui/material/styles";
+import VolunteerActivismIcon from "@mui/icons-material/VolunteerActivism";
 
 const theme = createTheme({
   typography: {
@@ -41,87 +42,77 @@ const Resume = () => {
           className={classes.heading}
           sx={{ mt: "4rem", fontSize: "3.5rem" }}
         >
-          Working Experience
+          My Experience
         </Typography>
       </ThemeProvider>
       <VerticalTimeline>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="2011 - present"
-          icon={<WorkIcon />}
+          date="Jun,2021 - present"
+          iconStyle={{ background: "#8a1c1c", color: "tan" }}
+          icon={<SchoolIcon />}
         >
-          <h1 className="vertical-timeline-element-title">Creative Director</h1>
-          <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
+          <h1 className="vertical-timeline-element-title">CICCC Student</h1>
+          <h4 className="vertical-timeline-element-subtitle">Vancouver, BC</h4>
           <p>
-            Creative Direction, User Experience, Visual Design, Project
-            Management, Team Leading
+            I have been studying to become a web developer, about front-end
+            languages, Java, PYTHON, etc.
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="2010 - 2011"
+          date="2019 - Mar,2021"
           icon={<WorkIcon />}
         >
-          <h1 className="vertical-timeline-element-title">Art Director</h1>
-          <h4 className="vertical-timeline-element-subtitle">
-            San Francisco, CA
-          </h4>
+          <h1 className="vertical-timeline-element-title">Internship</h1>
+          <h4 className="vertical-timeline-element-subtitle">Nagano, Japan</h4>
           <p>
-            Creative Direction, User Experience, Visual Design, SEO, Online
-            Marketing
+            While working as a front-end engineer as an internship, I attended
+            company code study sessions and had employees taught me in a
+            coworking space.
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="2008 - 2010"
-          icon={<WorkIcon />}
-        >
-          <h1 className="vertical-timeline-element-title">Web Designer</h1>
-          <h4 className="vertical-timeline-element-subtitle">
-            Los Angeles, CA
-          </h4>
-          <p>User Experience, Visual Design</p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          date="2006 - 2008"
-          icon={<WorkIcon />}
-        >
-          <h1 className="vertical-timeline-element-title">Web Designer</h1>
-          <h4 className="vertical-timeline-element-subtitle">
-            San Francisco, CA
-          </h4>
-          <p>User Experience, Visual Design</p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--education"
-          date="April 2013"
-          iconStyle={{ background: "#8a1c1c", color: "tan" }}
-          icon={<SchoolIcon />}
-        >
-          <h1 className="vertical-timeline-element-title">
-            Content Marketing for Web, Mobile and Social Media
-          </h1>
-          <h4 className="vertical-timeline-element-subtitle">Online Course</h4>
-          <p>Strategy, Social Media</p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--education"
-          date="November 2012"
-          iconStyle={{ background: "#8a1c1c", color: "tan" }}
-          icon={<SchoolIcon />}
-        >
-          <h1 className="vertical-timeline-element-title">
-            Agile Development Scrum Master
-          </h1>
-          <h4 className="vertical-timeline-element-subtitle">Certification</h4>
-          <p>Creative Direction, User Experience, Visual Design</p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
+          date="Feb,2020 - Apr,2020"
+          icon={<VolunteerActivismIcon />}
           iconStyle={{
             background: "tomato",
             color: "#8a1c1c",
             boxShadow: "0 0 0 4px tan",
+          }}
+        >
+          <h1 className="vertical-timeline-element-title">Volunteer</h1>
+          <h4 className="vertical-timeline-element-subtitle">
+            Ho Chi Minh, Vietnam
+          </h4>
+          <p>
+            I mainly taught English to applicants free of charge with university
+            students who are fluent in local English on the rooftops of cafes
+            and facilities.
+          </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          date="2017 - 2021"
+          iconStyle={{ background: "#8a1c1c", color: "tan" }}
+          icon={<SchoolIcon />}
+        >
+          <h1 className="vertical-timeline-element-title">College Student</h1>
+          <h4 className="vertical-timeline-element-subtitle">
+            Shinshu University, Japan
+          </h4>
+          <p>
+            {" "}
+            I majored in the Faculty of Law, the Code of Criminal Procedure in
+            Information Crime
+          </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          iconStyle={{
+            background: "tan",
+            color: "#8a1c1c",
+            boxShadow: "0 0 0 4px #8a1c1c",
           }}
           icon={<BabyChangingStationIcon />}
         />
